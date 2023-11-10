@@ -1,0 +1,146 @@
+* {
+    
+    color: #FFFFFF;
+    font-family: Roboto, sans-serif;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+span {
+    background-color: #FFFFFF;
+    font-weight: bold;
+    color: #354BF7;
+    border-radius: 5px;
+    padding: 0em 1em;
+}
+article {
+    margin: 0em;
+    padding: 0.5em;
+    
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    padding: 1em 1.5em 2.5em 1.5em;
+    margin: 2em;
+    list-style-type: none;
+    background-color:  #354BF7;
+}
+
+h1 {
+    font-size: 64px;
+    word-spacing: 1rem;
+}
+
+h2, a {
+    background-color: #C70039;
+    border-radius: 7.5px;
+    text-align: center;
+}
+
+h2 {
+    font-size: 32px ;
+    padding: 1.5rem;
+}
+
+h3 {
+    font-size: 30px;
+    margin: 0em 0em 1.5em 0em;
+}
+
+p {
+    text-align: justify;
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 2em;
+}
+a {
+    padding: 0.5em;
+    text-decoration: none;
+}
+
+article:first-of-type{
+    background-color: #354BF7;
+    padding: 2em;
+    font-size: 18px;
+}
+
+a:hover {
+    border: 1px solid #C70039;
+    background-color: #FFFFFF;
+    color: #C70039;
+}
+/* RED: #C70039
+   WHTE: #FFF 
+   ULTRAMARINE: #354BF7
+   */
+
+
+div {
+    background-color: #C70039;
+    width: 200px;
+    height: 150px;
+}
+
+div > div {
+    position: relative;
+    background-color: #354BF7;
+    width: 150px;
+    height: 100px;
+    left: 20px
+}
+
+div > div > div {
+    position: relative;
+    background-color: #FFFFFF;
+    width: 130px;
+    height: 80px;
+    left: 10px;
+    top: 10px;
+}
+
+div > div > div div {
+    position: relative;
+    width: 18px;
+    height: 18px;
+    background-color: #354BF7;
+    margin: 4px 8px;
+}
+
+div > div > div div:nth-child(-n+3) {
+    display: inline-block;
+}
+
+div > div > div div:nth-last-child(-n+3) {
+    display: inline-block;
+}
+
+div > div > div div:nth-child(4) {
+    display: block;
+    width: 0;
+    height: 0;
+}
+
+div > div:nth-child(-n+2):not(div > div > div ){
+    position: relative;
+    width: 15px;
+    height: 20px;
+    display: inline-block;
+    left: 30px;
+    top: 10px;
+}
+
+div > div:nth-child(1):not(div > div > div) {
+    left: 125px;
+}
+
+div:first-of-type:not(div div){
+   margin: 2em 2.5em 0em 2.5em;
+}
